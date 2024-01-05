@@ -1,0 +1,54 @@
+/* src/components/Header.css */
+
+.app-header {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.logo-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0c419; /* Yellow color on hover */
+    text-decoration: underline;
+}
+
+/* Add a subtle shadow on hover for the logo */
+.logo-container:hover h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Change background color on hover for the entire header */
+.app-header:hover {
+    background-color: black;
+}
